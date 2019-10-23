@@ -1,0 +1,44 @@
+1.3.5
+- switched back to port 80 instead of 10080 when querying temperature data from Toon:
+  http://127.0.0.1/happ_thermstat?action=getThermostatInfo
+
+1.3.3/1.3.4
+- firmware 5 comtatibility
+
+1.3.2
+- now compatible with firmware 4.16.8 (up and down arrows now shown ongraph)
+- no need to update on older firmwares
+
+1.3.1
+- changed save location for readings, was previously deleted after a full reboot.
+  Data is now persistent with a gui-restart as well as a full reboot.
+- bug fix: now also saving the Y-scale settings.
+  data was not displayed properly after a reboot without it
+- small code optimizations
+
+1.3.0
+- manually adjustable Y-axis
+- save measurement data to be available again after a restart
+- code optimizations
+
+1.2.2
+- rebranded for Toonstore
+
+1.2.1
+- cosmetic changes to systray icon
+
+1.2
+- added a third graph with outdoor temperatures taken from buienradar.
+  in order to see this data the buienradar app must be installed as well (version 8.0.5 or higher)
+  also the time from the buienradar file is used, meaning that this graph is always updated 10-20 minutes later then the room temperature and program temperature. 
+
+1.0
+- no reading and writing of the 24h values anymore to a temporary file before and after each reading .
+ Full table is kept in ram only. Only disadvantage: when the qt gui restarts all data from the last 24h is lost but will be build-up again of course
+- y-axis scale is now 12-28 degrees instead of 0-32 before, which makes it much more easier to read specific values
+- javascript module simplified
+- all unused elements/functions removed from the AreaGraphMod.qml
+- temperatureLoggerApp.qml simplified significantly.
+
+0.1
+- first functional release showing actual room temperature and program temperature for the last 24 hours

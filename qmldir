@@ -1,0 +1,2 @@
+module apps.temperaturelogger
+TemperatureloggerApp 1.0 TemperatureloggerApp.qml
