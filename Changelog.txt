@@ -1,3 +1,6 @@
+1.4.0
+- default to minimal fw5 imports in QML
+
 1.3.5
 - switched back to port 80 instead of 10080 when querying temperature data from Toon:
   http://127.0.0.1/happ_thermstat?action=getThermostatInfo

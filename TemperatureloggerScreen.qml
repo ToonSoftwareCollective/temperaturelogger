@@ -1,4 +1,4 @@
-import QtQuick 1.1
+import QtQuick 2.1
 import qb.components 1.0
 import BasicUIControls 1.0
 import GraphUtils 1.0;
@@ -172,7 +172,7 @@ Screen {
 
 		Image {
 			id: leftarrow
-			source: "./drawables/icon_arrowLeft_shadow.png"
+			source: "qrc:/tsc/icon_arrowLeft_shadow.png"
 			anchors {
 				baseline: nowverticalline.top
 				baselineOffset: isNxt ? -38 : -30
@@ -200,7 +200,7 @@ Screen {
 
 		Image {
 			id: rightarrow
-			source: "./drawables/icon_arrowRight_shadow.png"
+			source: "qrc:/tsc/icon_arrowRight_shadow.png"
 			anchors {
 				baseline: nowverticalline.top
 				baselineOffset: isNxt ? -38 : -30
@@ -213,7 +213,7 @@ Screen {
 			id: upButton;
 			width: isNxt ? 50 : 40
 			height: isNxt ? 25 : 20
-			iconSource: "./drawables/up.png"
+			iconSource: "qrc:/tsc/up.png"
 
 			anchors {
 				right: parent.right
@@ -232,7 +232,7 @@ Screen {
 			id: downButton;
 			width: isNxt ? 50 : 40
 			height: isNxt ? 25 : 20
-			iconSource: "./drawables/down.png"
+			iconSource: "qrc:/tsc/down.png"
 
 			anchors {
 				bottom: areaGraph.bottom

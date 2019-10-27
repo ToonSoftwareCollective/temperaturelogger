@@ -1,4 +1,4 @@
-import QtQuick 1.1
+import QtQuick 2.1
 import qb.components 1.0
 import qb.base 1.0
 import "temperatureLogger.js" as TemperatureLoggerJS
@@ -11,7 +11,7 @@ App {
 	// By making them a URL type property they will automatically be converted to full paths,
 	// preventing problems when passing them around to code that comes from a different path.
 
-	property url thumbnailIcon: "./drawables/buienradar.png"
+	property url thumbnailIcon: "qrc:/tsc/buienradar.png"
 	property TemperatureloggerScreen temperatureloggerScreen
 	property url trayUrl2 : "TemperatureloggerTray.qml";
 	property string timeStr
